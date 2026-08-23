@@ -1,12 +1,12 @@
 # 20-anti-slop-skills
 
-A collection of Claude Code / agent skills for building and shipping real websites — not AI-slop demos.
+A collection of Claude Code / agent skills for building and shipping real websites, not AI-slop demos.
 
 Each skill in `skills/` is a self-contained `SKILL.md` (Claude Code skill format) that teaches an agent what a competent web developer actually does for that part of the job, including the mistakes that make a site scream "an AI built this."
 
 ## Why this exists
 
-Most AI-generated sites share the same tells: gradient hero sections, rainbow-gradient headline text, generic hover-lift cards, three feature cards with an emoji icon, a fake testimonial carousel, no real favicon, no 404 page, broken mobile nav, missing meta tags, and zero actual SEO structure. These skills exist to close that gap — covering both the "don't do this" anti-patterns and the concrete "do this" checklist a real launch needs.
+Most AI-generated sites share the same tells: gradient hero sections, rainbow-gradient headline text, generic hover-lift cards, three feature cards with an emoji icon, a fake testimonial carousel, no real favicon, no 404 page, broken mobile nav, missing meta tags, and zero actual SEO structure. These skills exist to close that gap, covering both the "don't do this" anti-patterns and the concrete "do this" checklist a real launch needs.
 
 ## Status
 
