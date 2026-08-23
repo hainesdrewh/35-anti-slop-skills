@@ -20,8 +20,8 @@ See [PLAN.md](PLAN.md) for the full build plan: depth standard, what each skill 
 
 | # | Skill | Covers | Status |
 |---|-------|--------|--------|
-| 1 | `anti-ai-slop-design` (flagship) | Visual/UX judgment: what makes a site read as generic AI output, and the real alternatives | 🚧 |
-| 2 | `pre-launch-technical-audit` | Broken links, horizontal scroll, mobile overflow, broken buttons, placeholder text, custom 404, favicon, page titles, footer/copyright year | 🚧 |
+| 1 | `anti-ai-slop-design` (flagship) | Visual/UX judgment: what makes a site read as generic AI output, and the real alternatives | ✅ |
+| 2 | `pre-launch-technical-audit` | Broken links, horizontal scroll, mobile overflow, broken buttons, placeholder text, custom 404, favicon, page titles, footer/copyright year | ✅ |
 | 3 | `form-ux-feedback` | Form validation, error messages, success messages, required-field UX | ⬜ |
 | 4 | `on-page-seo` | Titles, meta descriptions, header hierarchy, internal linking, image alt text | ⬜ |
 | 5 | `technical-seo-crawlability` | sitemap.xml, robots.txt, llms.txt, canonical tags, Google Search Console setup | ⬜ |
