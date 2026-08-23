@@ -2,7 +2,9 @@
 
 A collection of Claude Code / agent skills for building and shipping real websites, not AI-slop demos.
 
-Each skill in `skills/` is a self-contained `SKILL.md` (Claude Code skill format) that teaches an agent what a competent web developer actually does for that part of the job, including the mistakes that make a site scream "an AI built this."
+Each skill in `skills/` is a self-contained `SKILL.md` (Claude Code skill format) that teaches an agent what a competent web developer actually does for that part of the job, including the mistakes that make a site scream "an AI built this." 
+
+Please don't expect to be able to download these skills and instantly be able to have AI make you a perfect website in one prompt you yourself still needs some sort of taste to build something great, you'll need to prompt a few times before its "production ready." Maybe more than a few times if you've never built a site before but never the less these skills are perfect for backend and frontend no matter how much experience you have.
 
 See [WHY.md](WHY.md) for the reasoning behind this repo.
 
