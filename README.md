@@ -25,7 +25,7 @@ Claude Code will pick up every installed skill automatically based on what you a
 
 ## Status
 
-All 35 skills are built. Private while under review before going public.
+All 35 skills are built and this repo is public. More skills are being added over time.
 
 ## Roadmap
 
