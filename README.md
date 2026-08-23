@@ -8,6 +8,12 @@ Please don't expect to be able to download these skills and instantly be able to
 
 See [WHY.md](WHY.md) for the reasoning behind this repo.
 
+## Examples
+
+Real (working, local) sites built entirely with these skills, screenshots included:
+
+- [Fieldstone Landscape Co.](examples/fieldstone-landscape-co): a local landscaping/hardscaping business site
+
 ## Quick start
 
 Paste this into Claude Code in any project where you want these skills available:
