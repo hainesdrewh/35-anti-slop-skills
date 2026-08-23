@@ -22,16 +22,16 @@ See [PLAN.md](PLAN.md) for the full build plan: depth standard, what each skill 
 |---|-------|--------|--------|
 | 1 | `anti-ai-slop-design` (flagship) | Visual/UX judgment: what makes a site read as generic AI output, and the real alternatives | ✅ |
 | 2 | `pre-launch-technical-audit` | Broken links, horizontal scroll, mobile overflow, broken buttons, placeholder text, custom 404, favicon, page titles, footer/copyright year | ✅ |
-| 3 | `form-ux-feedback` | Form validation, error messages, success messages, required-field UX | ⬜ |
-| 4 | `on-page-seo` | Titles, meta descriptions, header hierarchy, internal linking, image alt text | ⬜ |
-| 5 | `technical-seo-crawlability` | sitemap.xml, robots.txt, llms.txt, canonical tags, Google Search Console setup | ⬜ |
+| 3 | `form-ux-feedback` | Form validation, error messages, success messages, required-field UX | ✅ |
+| 4 | `on-page-seo` | Titles, meta descriptions, header hierarchy, internal linking, image alt text | ✅ |
+| 5 | `technical-seo-crawlability` | sitemap.xml, robots.txt, llms.txt, canonical tags, Google Search Console setup | ✅ |
 | 6 | `structured-data-schema` | Organization, LocalBusiness, Service, FAQ, Article schema markup | ⬜ |
 | 7 | `local-service-seo` | Location pages, service pages, NAP consistency, tap-to-call, opening hours, local keywords | ⬜ |
 | 8 | `trust-and-about-content` | About/story page, visible contact info, credibility signals | ⬜ |
 | 9 | `blog-content-seo` | Blog post structure, related content, internal linking within content | ⬜ |
 | 10 | `conversion-ctas` | CTA placement above the fold, thank-you pages, modals | ⬜ |
-| 11 | `mobile-navigation-ux` | Mobile menu, sticky nav, clickable logo/phone/email | ⬜ |
-| 12 | `legal-compliance-pages` | Privacy policy, ToS, cookie consent | ⬜ |
+| 11 | `mobile-navigation-ux` | Mobile menu, sticky nav, clickable logo/phone/email | ✅ |
+| 12 | `legal-compliance-pages` | Privacy policy, ToS, cookie consent | ✅ |
 | 13 | `image-performance-optimization` | Compression, lazy loading, Core Web Vitals basics | ⬜ |
 | 14 | `accessibility-basics` | Contrast, focus states, semantic HTML, alt text | ⬜ |
 | 15 | `contact-page-standards` | Visible email, social links, map, hours | ⬜ |
@@ -42,7 +42,7 @@ See [PLAN.md](PLAN.md) for the full build plan: depth standard, what each skill 
 | 20 | `custom-error-pages` | 404/500 pages that keep users on-site | ⬜ |
 | 21 | `frontend-polish-microinteractions` | Dark mode toggle, loading states, hover states, scroll progress bar, copy buttons, sticky header, scroll-to-top, print stylesheet, site search | ⬜ |
 | 22 | `analytics-and-attribution-basics` | UTM tracking, privacy-respecting conversion tracking | ⬜ |
-| 23 | `project-scoping-and-prd` | Define ICP/value prop, write a PRD, export to markdown, before building | ⬜ |
+| 23 | `project-scoping-and-prd` | Define ICP/value prop, write a PRD, export to markdown, before building | ✅ |
 | 24 | `secrets-and-env-hardening` | .env hygiene, no client-exposed API keys, purging leaked secrets | ✅ |
 | 25 | `auth-and-session-security` | Password hashing, secure cookies, CSRF, session invalidation, account lockout | ✅ |
 | 26 | `database-access-control` | Row-level security, least-privilege DB roles, server-side ownership checks | ✅ |
