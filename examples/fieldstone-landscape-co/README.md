@@ -1,4 +1,4 @@
-#Fieldstone Landscaping Co.
+Fieldstone Landscaping Co.
 
 (For reference this website was built with a simple prompt, "Build a fictional landscaping website using all front-end skills no back-end use all fictional information." This whole website was built with just that one singular prompt clean and simple. If you wanted something better you should always expect to give more in-depth information and prompts for better results.)
 
