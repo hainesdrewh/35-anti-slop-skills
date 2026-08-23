@@ -67,4 +67,4 @@ Concretely, before shipping, look at the full page top to bottom against the pre
 - [ ] Floating chrome (call button, scroll-to-top) was a deliberate choice for this direction, not a carried-over default
 - [ ] If you swapped this project's photos and color variables into the previous project's markup, would anyone notice? If the honest answer is no, the structural variation step was skipped
 
-See [references/style-directions.md](references/style-directions.md) for five fully-specified starting directions (clean minimal, editorial luxury, bold maximalist, dark technical, warm craft).
+See [references/style-directions.md](references/style-directions.md) for six fully-specified starting directions (clean minimal, editorial luxury, bold maximalist, dark technical, warm craft, cinematic bold), the last with full code for a floating pill nav, an oversized photo-blended headline, a marquee ticker, and a floating overlay card, since that direction is otherwise the hardest to execute from a description alone.

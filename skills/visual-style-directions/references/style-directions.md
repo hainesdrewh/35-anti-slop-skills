@@ -1,4 +1,4 @@
-# Five Style Directions
+# Six Style Directions
 
 Each one is a coherent system, not just a palette. Adapt specifics to the real business; don't apply verbatim.
 
@@ -56,3 +56,69 @@ Fits: local service businesses, artisanal/handmade products, food and hospitalit
 - **Motion**: restrained and functional, similar to editorial luxury but less slow/dramatic, since the audience is browsing practically, not being sold an aspirational lifestyle.
 - **Imagery**: real photography of the actual business, people, and work; this direction has the least tolerance for generic stock photography of any of the five, since the entire appeal is genuineness.
 - **Structural signature**: simple inline header with a filled CTA button (the one direction where this default genuinely fits); full-bleed photo hero with overlay text is appropriate here; standard bordered card grid with shadow-on-hover is a reasonable default for this direction specifically; a floating call button is often the single highest-value piece of chrome for this audience and should stay.
+
+## 6. Cinematic bold
+
+Fits: premium real estate, architecture and design firms, luxury travel/hospitality, automotive, anything where the product itself is visually spectacular and the site's job is to feel as impressive as the product. The highest-visual-ambition direction on this list; it takes real production effort (photography quality, headline copy that reads well oversized) to pull off, and looks worse than a plain site if attempted half-heartedly.
+
+- **Palette**: a dark, moody base (deep navy or near-black) over which real photography and bright white or gradient-fill typography sit; a single vivid accent (often a saturated green, purple, or amber) used only for the primary CTA pill and small UI accents, never as a large fill.
+- **Type**: one very heavy, condensed or extra-bold sans for the oversized hero headline (headline text is a graphic element here, not just large body type), paired with a plain, small-scale sans for everything else, nav, captions, body copy, so the scale contrast does the work.
+- **Spacing**: the hero is dense with layered elements (nav, headline, caption, floating cards, a ticker) rather than a single centered message; everywhere else on the page reverts to conventional, comfortable spacing so the density is a hero-specific effect, not the whole site's personality.
+- **Motion**: the marquee ticker runs continuously and subtly; other motion (card hovers, page transitions) stays crisp and understated so it doesn't compete with the hero's visual density.
+- **Imagery**: full-bleed, genuinely striking, high-production photography of the actual property/product from a flattering wide angle; this direction has zero tolerance for a mediocre or dark/flat photo, since the whole hero is built around it carrying real visual weight. Never substitute a more dramatic but unrelated photo (a different, more striking property) for the real thing being sold, see `contrast-and-image-integrity-checks` and `image-sourcing-and-generation`; a real, well-shot, honest photo of the actual property in a wide establishing angle is the requirement, not a swap.
+- **Structural signature**: a floating pill-shaped nav bar sitting directly on the hero image with no boxed header behind it (a small logo mark floats top-left, a filled accent-color CTA pill floats top-right, nav links sit in a white or blurred pill in the center); an oversized headline (10-15vw) laid directly over the hero photo, using a gradient or blend-mode fill so it reads as part of the image rather than a text box on top of it; a short caption line sitting directly on the image near a bottom corner, not in a separate content panel; a floating overlay card (a featured listing thumbnail plus price) anchored to a hero corner; a continuously scrolling marquee ticker along the hero's bottom edge showing prices or quick stats.
+
+### Cinematic bold: concrete implementation
+
+**Oversized headline blended into the photo**, not a plain white heading in a text box:
+
+```css
+.hero-mega-headline {
+  position: absolute; top: 8%; left: 0; right: 0; text-align: center;
+  font-size: clamp(4rem, 14vw, 11rem); font-weight: 800; line-height: 0.9;
+  letter-spacing: -0.02em; margin: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.15) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.hero-media img { position: relative; z-index: 2; } /* photo's main subject sits above the faded headline tail */
+```
+
+The gradient fade (opaque at top, transparent by the bottom of the text) combined with the photo's real subject rendered at a higher stacking position is what produces the "text behind the building" collage effect without needing a manually cut-out image.
+
+**Floating pill nav with no boxed header**:
+
+```css
+.hero-nav {
+  position: absolute; top: var(--space-6); left: var(--space-6); right: var(--space-6);
+  z-index: 3; display: flex; align-items: center; justify-content: space-between;
+}
+.hero-nav-links {
+  display: flex; gap: var(--space-2); background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px); border-radius: 999px; padding: var(--space-1);
+}
+.hero-nav-links a { padding: var(--space-2) var(--space-5); border-radius: 999px; color: #fff; text-decoration: none; font-size: 0.92rem; }
+.hero-nav-links a[aria-current="page"] { background: #fff; color: #111; }
+.hero-cta-pill { background: var(--accent); color: #111; padding: var(--space-2) var(--space-5); border-radius: 999px; font-weight: 600; text-decoration: none; }
+```
+
+**Marquee ticker** (pause on hover, and stop entirely under reduced motion per `advanced-motion-and-3d`):
+
+```css
+.ticker { overflow: hidden; white-space: nowrap; background: rgba(0,0,0,0.35); position: absolute; left: 0; right: 0; bottom: 0; z-index: 3; padding: var(--space-2) 0; }
+.ticker-track { display: inline-block; animation: ticker-scroll 28s linear infinite; }
+.ticker:hover .ticker-track { animation-play-state: paused; }
+@keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
+```
+
+Duplicate the ticker's content once in the markup (render the same list of items twice back to back) so the `-50%` loop point lines up seamlessly.
+
+**Floating overlay card**, anchored to a hero corner, real content only:
+
+```css
+.hero-float-card {
+  position: absolute; right: var(--space-6); bottom: calc(var(--space-6) + 40px); z-index: 3;
+  background: #fff; border-radius: var(--radius-md); padding: var(--space-3); display: flex; gap: var(--space-3);
+  align-items: center; box-shadow: var(--shadow-2); max-width: 280px;
+}
+```
