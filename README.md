@@ -73,4 +73,4 @@ Each `skills/<name>/SKILL.md` follows the standard Claude Code skill format (YAM
 
 ## License
 
-TBD before going public.
+MIT. See [LICENSE](LICENSE).
