@@ -42,6 +42,12 @@ Before starting a new build, deliberately choose, and vary from the last project
 
 If a new project's header, hero, and card structure would be interchangeable with the previous project's if you swapped the photos and color variables, that's the signal this step was skipped, not evidence the direction was distinct enough.
 
+### Vary the recurring mid-page sections too, not only the hero and header
+
+It's possible to genuinely restructure the header, hero, and footer, the highest-visibility, most-scrutinized parts of a page, and still ship something that reads as the same template, because the sections in between (a stats/trust band, a feature callout with an image and text side by side, a testimonial grid, a closing CTA band) got carried over unchanged with only the color variables swapped. Those sections are just as much a structural fingerprint as the hero: a `grid-3` of identically-styled cards for testimonials, a `grid-2` image-left-text-right feature callout, and a dark full-width CTA band are a recognizable combination on their own even with a perfectly redesigned hero above them. Treat every repeating section on the page as a place to apply this skill, not only the parts a visitor sees first.
+
+Concretely, before shipping, look at the full page top to bottom against the previous project's and ask section by section, not just "is the hero different" but "is the stats band different, is the feature callout different, is the testimonial layout different, is the CTA band different." A single un-varied section is a smaller miss than an un-varied hero, but four or five of them in a row is the difference a visitor actually notices when they say two sites "look the same."
+
 ## Never do this
 
 - Never default to the same style direction across multiple unrelated projects without a specific reason this project calls for it too.
@@ -57,6 +63,7 @@ If a new project's header, hero, and card structure would be interchangeable wit
 - [ ] If this agent has built other sites, the direction wasn't repeated reflexively from the most recent project
 - [ ] The direction's specifics were adapted to this business's actual brand and market, not copied verbatim
 - [ ] Header/nav pattern, hero composition, card/grid anatomy, and section rhythm were each deliberately chosen and differ structurally from the immediately previous project, not just recolored
+- [ ] Every recurring mid-page section (stats/trust band, feature callout, testimonial layout, CTA band) was checked individually against the previous project, not only the hero and header
 - [ ] Floating chrome (call button, scroll-to-top) was a deliberate choice for this direction, not a carried-over default
 - [ ] If you swapped this project's photos and color variables into the previous project's markup, would anyone notice? If the honest answer is no, the structural variation step was skipped
 
