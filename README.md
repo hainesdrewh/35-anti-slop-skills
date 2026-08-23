@@ -1,4 +1,4 @@
-# 35-anti-slop-skills
+# 45-anti-slop-skills
 
 A collection of Claude Code / agent skills for building and shipping real websites, not AI-slop demos.
 
@@ -19,7 +19,7 @@ Real (working, local) sites built entirely with these skills, screenshots includ
 Paste this into Claude Code in any project where you want these skills available:
 
 ```
-Clone https://github.com/hainesdrewh/35-anti-slop-skills.git into a temp
+Clone https://github.com/hainesdrewh/45-anti-slop-skills.git into a temp
 directory, copy every folder under its skills/ directory into this
 project's .claude/skills/ directory (create .claude/skills/ if it doesn't
 exist yet, and don't overwrite any skill folder already there with the
@@ -31,7 +31,7 @@ Claude Code will pick up every installed skill automatically based on what you a
 
 ## Status
 
-All 35 skills are built and this repo is public. More skills are being added over time.
+All 45 skills are built and this repo is public. More skills are being added over time.
 
 ## Roadmap
 
@@ -72,6 +72,16 @@ All 35 skills are built and this repo is public. More skills are being added ove
 | 33 | `component-detail-polish` | Every real interactive state (active, disabled, focus, loading), not just hover |
 | 34 | `motion-system` | A coherent easing/duration system, reduced-motion handled everywhere |
 | 35 | `industry-visual-execution` | Picture-perfect layout patterns per vertical: real estate, restaurants, home services, and more |
+| 36 | `contrast-and-image-integrity-checks` | Scriptable contrast checks, and verifying an image actually matches what the copy claims |
+| 37 | `data-grid-and-listing-pages` | Browsing/filtering UI: real estate listings, e-commerce category pages, job boards, directories |
+| 38 | `ecommerce-layout-patterns` | Product pages, cart, checkout, honest pricing and stock/shipping information |
+| 39 | `saas-marketing-pages` | Landing pages, pricing pages, and features pages that avoid the generic SaaS template |
+| 40 | `portfolio-and-creative-showcase` | Portfolio sites where the work itself is the primary content |
+| 41 | `editorial-and-blog-layout` | Reading-optimized layout for content-heavy and publication-style sites |
+| 42 | `dashboard-and-app-ui` | Internal app UI: data tables, persistent nav, density for daily repeated use |
+| 43 | `visual-style-directions` | Five named, fully-specified style systems, so not every site defaults to the same look |
+| 44 | `advanced-motion-and-3d` | Scroll-driven animation, 3D transforms, and WebGL judgment, performance, and accessibility |
+| 45 | `image-sourcing-and-generation` | Finding real stock photos or generating images that actually match the content |
 
 ## Using a single skill
 
