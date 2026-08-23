@@ -11,6 +11,7 @@ Fits: professional services, healthcare, fintech, B2B SaaS aimed at a technical 
 - **Spacing**: generous, consistent, airy. Let content breathe; density is low on purpose.
 - **Motion**: minimal and fast (100-150ms), functional only (state changes), no decorative animation.
 - **Imagery**: simple, high-quality, often product screenshots or clean photography with a lot of negative space around the subject.
+- **Structural signature**: minimal logo-only header, nav revealed on scroll or tucked in a slide-out rather than always inline; centered text-only hero with no photo, or a small supporting screenshot; bordered cards kept minimal (thin 1px border, no shadow, no hover-lift); no floating call button, a scroll-to-top is the only floating chrome if any.
 
 ## 2. Editorial luxury
 
@@ -21,6 +22,7 @@ Fits: real estate, hospitality, high-end retail, professional creative services,
 - **Spacing**: generous, deliberate, asymmetric where it adds visual interest rather than defaulting to centered symmetry everywhere.
 - **Motion**: slow and smooth (300-500ms for larger movements), used sparingly for genuine emphasis (a slow image reveal, a considered hover), never bouncy or playful.
 - **Imagery**: full-bleed, high-quality, real photography treated as the primary content, not decoration.
+- **Structural signature**: split-screen hero (text on a solid panel beside a full-height image) rather than photo-with-overlay-text; an editorial alternating-row layout for showcasing items instead of a uniform card grid, borderless images with caption text below rather than bordered cards with shadows; no floating call button or scroll-to-top, this direction's restraint is undermined by persistent floating chrome.
 
 ## 3. Bold maximalist
 
@@ -31,6 +33,7 @@ Fits: entertainment, events, youth-oriented consumer brands, creative agencies, 
 - **Spacing**: can be tighter and more energetic than minimal or luxury directions, with intentional visual density in places, but still needs a real underlying spacing scale, energetic does not mean inconsistent.
 - **Motion**: expressive and characterful (playful easing, real personality in transitions), while still respecting `prefers-reduced-motion` and performance budgets from [`motion-system`](../../motion-system/SKILL.md).
 - **Imagery**: can be illustrated, photographic, or mixed, but should feel specific to the brand's actual personality, not generic stock energy.
+- **Structural signature**: bold full-width header bar, not a floating pill-shaped sticky header; hero built from an asymmetric or overlapping image collage rather than one full-bleed photo; overlapping/layered card treatment instead of a uniform bordered grid; a floating CTA is appropriate here if the business genuinely benefits from urgency, styled boldly rather than as a quiet pill.
 
 ## 4. Dark technical
 
@@ -41,6 +44,7 @@ Fits: developer tools, technical products, security/infrastructure companies, ga
 - **Spacing**: precise and structured, reflecting the technical audience; moderate density is expected and appropriate.
 - **Motion**: crisp and fast, functional (state changes, data updates), rarely decorative.
 - **Imagery**: real product UI, terminal/code screenshots, diagrams, rather than abstract illustration or stock photography.
+- **Structural signature**: centered logo with nav split left/right around it, or a top utility bar plus a separate primary nav row; hero built around a real product screenshot or terminal window rather than a lifestyle photo; dense card/table hybrid layouts are appropriate here where they'd feel wrong elsewhere; no floating call button, a compact scroll-to-top or none at all.
 
 ## 5. Warm craft
 
@@ -51,3 +55,4 @@ Fits: local service businesses, artisanal/handmade products, food and hospitalit
 - **Spacing**: comfortable and unpretentious, real information density (this audience wants to see specifics: pricing, real photos, real reviews) rather than airy minimalism that can read as evasive for a business that should feel approachable and concrete.
 - **Motion**: restrained and functional, similar to editorial luxury but less slow/dramatic, since the audience is browsing practically, not being sold an aspirational lifestyle.
 - **Imagery**: real photography of the actual business, people, and work; this direction has the least tolerance for generic stock photography of any of the five, since the entire appeal is genuineness.
+- **Structural signature**: simple inline header with a filled CTA button (the one direction where this default genuinely fits); full-bleed photo hero with overlay text is appropriate here; standard bordered card grid with shadow-on-hover is a reasonable default for this direction specifically; a floating call button is often the single highest-value piece of chrome for this audience and should stay.

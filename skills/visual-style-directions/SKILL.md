@@ -27,12 +27,28 @@ If this agent has built multiple sites, actively check what direction was used l
 
 The named directions in the reference file are starting points with real specifics (so they're actually usable, not vague mood words), but the specific palette, type choices, and details should still be adapted to the actual business, its existing brand assets if any, and its real competitors, not applied as an unmodified template.
 
+### Vary structure, not just palette and font
+
+This is the mistake that undermines this skill most often, and it's subtle enough to happen even while genuinely trying to follow it: swapping the color variables and the font pairing while reusing the exact same layout skeleton from the last project (the same header pattern, the same hero composition, the same card anatomy, the same section rhythm, the same floating chrome) produces two sites that are still recognizably the same template wearing different colors. A visitor, and especially another site built by the same agent sitting side by side, reads that as sameness regardless of how different the palette is. Palette and type are the least of what makes two sites feel distinct; structure is most of it.
+
+Before starting a new build, deliberately choose, and vary from the last project, at least the following:
+
+- **Header/nav pattern**: a simple inline text nav with a filled CTA button, a minimal logo-only header with nav revealed on scroll or in a slide-out, a centered logo with nav split left/right around it, or a bold full-width bar with no floating/sticky behavior at all.
+- **Hero composition**: full-bleed photo with text overlay, a split-screen layout (text on a solid color panel beside an image panel), a centered text-only hero with no image, an asymmetric layout with an off-center image bleeding off one edge, or a hero built from a grid of smaller images rather than one large one.
+- **Card/grid anatomy**: bordered cards with rounded corners and shadow-on-hover (the default that's easy to reach for), borderless images with caption text below and no card container at all, an editorial alternating-row layout instead of a grid, overlapping/layered image treatment, or a dense list/table view instead of a card grid.
+- **Section rhythm**: alternating background bands (light/alt/light), one continuous background with dividers or whitespace doing the separation instead, or a fully asymmetric page with no repeating rhythm at all.
+- **Floating chrome**: a floating CTA button and scroll-to-top are genuinely useful for some categories (see [`frontend-polish-microinteractions`](../frontend-polish-microinteractions/SKILL.md)) and actively wrong for others; a restrained editorial-luxury direction, for instance, is undermined by the same floating brass button pattern reused from a warm-craft local-service site. Decide per project whether floating chrome fits the direction at all.
+- **Motion signature**: the specific easing/duration values from [`motion-system`](../motion-system/SKILL.md) should differ in character between projects too, a slow deliberate fade for an editorial-luxury site reads differently than a snappy, energetic transition for a bold-maximalist one, not just the same drift-zoom hero animation with a different photo underneath.
+
+If a new project's header, hero, and card structure would be interchangeable with the previous project's if you swapped the photos and color variables, that's the signal this step was skipped, not evidence the direction was distinct enough.
+
 ## Never do this
 
 - Never default to the same style direction across multiple unrelated projects without a specific reason this project calls for it too.
 - Never mix incompatible signals from different directions (a restrained luxury palette with bouncy, playful motion, for example) without a deliberate reason.
 - Never treat a style direction as only a color palette; type, spacing personality, and motion character all need to cohere with it.
 - Never apply a named direction's specifics verbatim without adapting them to the actual business and any existing brand assets.
+- Never reuse the previous project's header pattern, hero composition, card anatomy, and section rhythm unchanged while only swapping the color palette and font pairing; that produces two sites that are structurally identical, which reads as sameness regardless of how different the colors are.
 
 ## Verification checklist
 
@@ -40,5 +56,8 @@ The named directions in the reference file are starting points with real specifi
 - [ ] Palette, typography, spacing personality, and motion character all cohere with the chosen direction
 - [ ] If this agent has built other sites, the direction wasn't repeated reflexively from the most recent project
 - [ ] The direction's specifics were adapted to this business's actual brand and market, not copied verbatim
+- [ ] Header/nav pattern, hero composition, card/grid anatomy, and section rhythm were each deliberately chosen and differ structurally from the immediately previous project, not just recolored
+- [ ] Floating chrome (call button, scroll-to-top) was a deliberate choice for this direction, not a carried-over default
+- [ ] If you swapped this project's photos and color variables into the previous project's markup, would anyone notice? If the honest answer is no, the structural variation step was skipped
 
 See [references/style-directions.md](references/style-directions.md) for five fully-specified starting directions (clean minimal, editorial luxury, bold maximalist, dark technical, warm craft).
