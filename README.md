@@ -1,4 +1,4 @@
-# 30-anti-slop-skills
+# 35-anti-slop-skills
 
 A collection of Claude Code / agent skills for building and shipping real websites, not AI-slop demos.
 
@@ -11,7 +11,7 @@ See [WHY.md](WHY.md) for the reasoning behind this repo.
 Paste this into Claude Code in any project where you want these skills available:
 
 ```
-Clone https://github.com/hainesdrewh/30-anti-slop-skills.git into a temp
+Clone https://github.com/hainesdrewh/35-anti-slop-skills.git into a temp
 directory, copy every folder under its skills/ directory into this
 project's .claude/skills/ directory (create .claude/skills/ if it doesn't
 exist yet, and don't overwrite any skill folder already there with the
@@ -23,7 +23,7 @@ Claude Code will pick up every installed skill automatically based on what you a
 
 ## Status
 
-All 30 skills are built. Private while under review before going public.
+All 35 skills are built. Private while under review before going public.
 
 ## Roadmap
 
@@ -59,6 +59,11 @@ All 30 skills are built. Private while under review before going public.
 | 28 | `api-abuse-and-rate-limiting` | Rate limiting, capped AI usage, bot protection, anti signup/login spam |
 | 29 | `file-upload-and-payment-integrity` | Upload whitelisting, server-side pricing, verified payment webhooks |
 | 30 | `transport-headers-and-monitoring` | HTTPS/HSTS, CORS, security headers, dependency scanning, security logging |
+| 31 | `layout-spacing-and-alignment` | A real spacing scale, vertical rhythm, optical vs. mathematical alignment |
+| 32 | `typography-craft` | Line length, line-height scaling, type scale, widow/orphan control, font loading |
+| 33 | `component-detail-polish` | Every real interactive state (active, disabled, focus, loading), not just hover |
+| 34 | `motion-system` | A coherent easing/duration system, reduced-motion handled everywhere |
+| 35 | `industry-visual-execution` | Picture-perfect layout patterns per vertical: real estate, restaurants, home services, and more |
 
 ## Using a single skill
 
