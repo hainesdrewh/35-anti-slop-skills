@@ -172,3 +172,12 @@ Every item you listed maps to exactly one skill above, flagged here so you can c
 ## Resolved
 
 Schema markup (`structured-data-schema`) will include Rich Results Test validation steps, not just JSON-LD templates. Confirmed.
+
+## Future expansion (after the current ~30 are finished)
+
+- Grow toward 50 to 100 skills total, covering both website and mobile app building, for every common project type, not just marketing sites.
+- Full-stack depth skills to add: deployment/CI safety (env parity, zero-downtime deploys, rollback plans), database migration safety (no destructive migration without a backup/rollback path), a testing-before-ship skill (what actually needs a test vs. what doesn't), and observability/error-monitoring beyond the security-event logging already in `transport-headers-and-monitoring`.
+- A new "industry-specific visual execution" skill, a companion to `anti-ai-slop-design`, covering how to build genuinely picture-perfect sites per industry/vertical: e.g. a landscaping site with real cinematic background video/imagery of actual work, a clean minimalist style for a professional-services site, and other vertical-specific visual treatments that go beyond generic anti-slop rules into "what does excellent actually look like for this specific kind of business."
+- Mobile app equivalents of the web-focused skills where the concerns transfer (navigation patterns, forms, security, performance) plus mobile-specific ones (app store listing quality, permissions requests done right, offline states, push notification hygiene).
+
+None of this gets built until the current ~30-skill batch is complete and reviewed.
