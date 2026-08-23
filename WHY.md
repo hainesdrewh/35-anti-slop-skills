@@ -18,4 +18,4 @@ Every skill states a clear position, names the specific anti-patterns it exists 
 
 ## What this repo is not
 
-It's not a replacement for real design taste, a real security review for anything high-stakes, or a lawyer for anything with genuine legal/compliance exposure. It's the baseline that should already be true before any of those bigger conversations happen, so that time spent on real judgment calls isn't spent instead on catching a missing favicon or an unhashed password.
+It's not a replacement for real design taste; you still have to know how to prompt an AI. It's a real security review for anything high-stakes, or a lawyer for anything with genuine legal/compliance exposure. It's the baseline that should already be true before any of those bigger conversations happen, so that time spent on real judgment calls isn't spent instead on catching a missing favicon or an unhashed password.
