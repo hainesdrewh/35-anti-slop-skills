@@ -43,13 +43,13 @@ See [PLAN.md](PLAN.md) for the full build plan: depth standard, what each skill 
 | 21 | `frontend-polish-microinteractions` | Dark mode toggle, loading states, hover states, scroll progress bar, copy buttons, sticky header, scroll-to-top, print stylesheet, site search | ⬜ |
 | 22 | `analytics-and-attribution-basics` | UTM tracking, privacy-respecting conversion tracking | ⬜ |
 | 23 | `project-scoping-and-prd` | Define ICP/value prop, write a PRD, export to markdown, before building | ⬜ |
-| 24 | `secrets-and-env-hardening` | .env hygiene, no client-exposed API keys, purging leaked secrets | ⬜ |
-| 25 | `auth-and-session-security` | Password hashing, secure cookies, CSRF, session invalidation, account lockout | ⬜ |
-| 26 | `database-access-control` | Row-level security, least-privilege DB roles, server-side ownership checks | ⬜ |
-| 27 | `input-validation-and-injection-defense` | Server-side validation, parameterized queries, XSS/prompt-injection defense | ⬜ |
-| 28 | `api-abuse-and-rate-limiting` | Rate limiting, capped AI usage, bot protection, anti signup/login spam | ⬜ |
-| 29 | `file-upload-and-payment-integrity` | Upload whitelisting, server-side pricing, verified payment webhooks | ⬜ |
-| 30 | `transport-headers-and-monitoring` | HTTPS/HSTS, CORS, security headers, dependency scanning, security logging | ⬜ |
+| 24 | `secrets-and-env-hardening` | .env hygiene, no client-exposed API keys, purging leaked secrets | ✅ |
+| 25 | `auth-and-session-security` | Password hashing, secure cookies, CSRF, session invalidation, account lockout | ✅ |
+| 26 | `database-access-control` | Row-level security, least-privilege DB roles, server-side ownership checks | ✅ |
+| 27 | `input-validation-and-injection-defense` | Server-side validation, parameterized queries, XSS/prompt-injection defense | ✅ |
+| 28 | `api-abuse-and-rate-limiting` | Rate limiting, capped AI usage, bot protection, anti signup/login spam | ✅ |
+| 29 | `file-upload-and-payment-integrity` | Upload whitelisting, server-side pricing, verified payment webhooks | ✅ |
+| 30 | `transport-headers-and-monitoring` | HTTPS/HSTS, CORS, security headers, dependency scanning, security logging | ✅ |
 
 ## Using a skill
 
