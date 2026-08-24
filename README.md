@@ -19,7 +19,7 @@ Real (working, local) sites built entirely with these skills, screenshots includ
 Paste this into Claude Code in any project where you want these skills available:
 
 ```
-Clone https://github.com/hainesdrewh/45-anti-slop-skills.git into a temp
+Clone https://github.com/Kryhr/45-anti-slop-skills.git into a temp
 directory, copy every folder under its skills/ directory into this
 project's .claude/skills/ directory (create .claude/skills/ if it doesn't
 exist yet, and don't overwrite any skill folder already there with the
