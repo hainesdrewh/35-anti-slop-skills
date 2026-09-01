@@ -12,7 +12,8 @@ See [WHY.md](WHY.md) for the reasoning behind this repo.
 
 Real (working, local) sites built entirely with these skills, screenshots included:
 
-- [Fieldstone Landscape Co.](examples/fieldstone-landscape-co): a local landscaping/hardscaping business site
+- [Fieldstone Landscape Co.](examples/fieldstone-landscape-co): a local landscaping/hardscaping business site\
+- Disclosr.info A site for finding local food and produce businesses. 
 
 ## Quick start
 
